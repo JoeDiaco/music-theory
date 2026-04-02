@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.Test;
 
-public class TestKey {
+public class TestKeyF2P {
     private static final PitchParser pitchParser = new PitchParser();
     private static final ChordParser chordParser = new ChordParser();
 
