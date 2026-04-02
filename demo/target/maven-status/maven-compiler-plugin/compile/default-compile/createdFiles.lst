@@ -7,6 +7,7 @@ com/example/PitchClass.class
 com/example/Interval$1.class
 com/example/Mode.class
 com/example/ChordQuality.class
+com/example/KeyParser.class
 com/example/IntervalNumber.class
 com/example/Pitch.class
 com/example/Chord.class

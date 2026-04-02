@@ -17,4 +17,17 @@ public class Key {
         return mode;
     }
 
+    public Chord[] getDiatonicChords() {
+        Chord[] diatonicChords = new Chord[7];
+        diatonicChords[0] = new Chord(tonic, mode.getTonicQuality());
+
+        ChordQuality[] qualities = mode.getChordQualities();
+        Interval[] intervals = mode.getIntervals();
+
+        for (int i = 0; i < diatonicChords.length - 1; i++) {
+            diatonicChords[i + 1] = new Chord(tonic.transpose(intervals[i]), qualities[i]);
+        }
+
+        return diatonicChords;
+    }
 }
